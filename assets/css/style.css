@@ -1,0 +1,264 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+/* header */
+.header{
+    height: 180px;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.header__title{
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.header__greeting{
+    margin: 15px 0;
+}
+
+.header__greeting .name-author{
+    padding: 0 8px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+}
+
+/* content */
+
+.content{
+    display: flex;
+}
+
+.shadow-and-radius{
+    box-shadow: 0 4px 10px #777;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.container{
+    padding: 0 16px 16px;
+}
+
+/* left content */
+.content__left{
+    flex: 1;
+}
+
+.content__right{
+   width: calc(100%/3);
+}
+
+.content__left .left-item{
+    margin: 16px;
+    
+}
+
+.content__left .left-item:last-child{
+    margin-top: 30px;
+}
+
+.content__left .left-item .left-item__img{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.content__left .left-item .left-item__heading{
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.content__left .left-item .left-item__description{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.content__left .left-item .left-item__text{
+    margin: 15px 0;
+}
+
+.content__left .left-item .left-item__footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__left .left-item .left-item__footer .btn{
+    padding: 14px 32px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: 1px solid #999;
+}
+
+.content__left .left-item .left-item__footer .btn:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.content__left .left-item .left-item__footer .comment{
+    float: right;
+    /* line-height: 50px; */
+    align-self: center;
+    padding: 12px 24px;
+}
+
+.content__left .left-item .left-item__footer .comment::after{
+    content: "0";
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 0 8px;
+
+}
+
+/* right content */
+
+.content-right__heading-section{
+    font-size: 20px;
+    padding: 18px 16px;
+    background-color: #f1f1f1;
+    border-radius: 16px 16px 0 0;
+    font-weight: 500;
+}
+
+.content__right .wrapper{
+    margin: 16px;
+}
+
+
+.content__right .info__avatar{
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+}
+
+.content__right .info__name{
+    margin: 10px 0;
+    font-size: 20px;
+}
+    /* popular posts */
+
+.content__right .popular-posts{
+    margin-top: 33px;
+}
+
+
+.content__right .popular-posts__item{
+    display: flex;
+    padding: 16px;
+    background-color: #fff;
+    transition: .2s;
+}
+
+.content__right .popular-posts__item:last-child{
+    border-radius: 0 0 16px 16px;
+}
+
+.content__right .popular-posts__item:hover{
+    background-color: #ccc;
+}
+
+.content__right .popular-posts__item-img{
+    width: 50px;
+    margin-right: 16px;
+}
+
+.content__right .popular-posts__item-name{
+    font-size: 18px;
+}
+
+/* tags */
+
+.content__right .tags{
+    margin-top: 33px;
+}
+
+.content__right .tag__list{
+    background-color: #fff;
+    padding: 16px;
+}
+
+.content__right .tag__item{
+    padding: 0 8px;
+    display: inline-block;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.content__right .tag__item--black-tag{
+    font-size: 15px;
+    
+    background-color: #000;
+    color: #fff;
+}
+
+.content__right .tag__item--light-tag{
+    font-size: 12px;
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* footer */
+.footer{
+    background-color: #616161;
+    margin-top: 40px;
+}
+
+.footer__wrapper{
+    padding: 32px 16px;
+}
+
+.footer__nav{
+    display: flex ;
+}
+
+.footer__nav-btn{
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    transition: .2s;
+}
+
+.footer__nav-btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.footer__nav-btn i{
+    color: #fff;
+}
+
+
+.footer__nav-btn:last-child{
+    margin-left: 4px;
+
+}
+
+.footer__copyright{
+    color: #fff;
+    margin-top: 32px;margin-bottom: 16px;
+}
+
+.footer__copyright-link{
+    color: #fff;
+}
+
+.footer__nav-btn.footer__nav-btn--disable{
+    opacity: .3;
+    cursor: not-allowed;
+}
+
+
+
+
+
